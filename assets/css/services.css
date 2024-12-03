@@ -1,0 +1,32 @@
+.service-item {
+    position: relative;
+    background-image: url('assets/img/3.svg'); /* Tilføj baggrundsbillede */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+    transition: none;
+    overflow: hidden;
+  }
+
+  .service-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Sort overlay med 50% opacitet */
+    z-index: 1;
+  }
+
+  .service-item * {
+    position: relative;
+    z-index: 2;
+    color: #ffffff; /* Gør teksten hvid for bedre kontrast */
+  }
+
+  .service-item:hover {
+    box-shadow: none;
+    transform: none;
+  }
